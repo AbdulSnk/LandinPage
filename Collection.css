@@ -1,0 +1,13 @@
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-border-bottom {
+  position: absolute;
+  bottom: -5px; /* Position slightly below the slider */
+  left: 0;
+  width: 33.33%; /* One-third width to match the 3 slides */
+  height: 3px;
+  background-color: black;
+  z-index: 10; /* Keep it above the slider */
+}

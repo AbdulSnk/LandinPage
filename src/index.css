@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Playfair Display", serif;
+  /* color-scheme: dark; */
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/fonts/AvenirLTProLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/fonts/AvenirLTProMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/fonts/AvenirLTProRoman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
