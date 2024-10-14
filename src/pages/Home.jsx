@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImage from "../../assets/img/bg.png";
+import bgImage from "../assets/img/bg.png";
 import { Menu, ArrowRight } from "lucide-react";
 
 const Home = ({ setClicked, clicked }) => {

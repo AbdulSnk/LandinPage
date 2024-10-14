@@ -1,18 +1,17 @@
 import React from "react";
-import { collections, collectionsText } from "../data";
-import CollectionCard from "../CollectionCard";
-import Hero from "../Hero";
+import { collections, collectionsText } from "../components/data";
+import CollectionCard from "../components/CollectionCard";
+import Hero from "../components/Hero";
 
 const Collection = () => {
   return (
     <div className="bg-[#F4F1E0] pt-20 pb-32">
-      <div className="container mx-auto px-4   ">
+      <div className="container mx-auto px-6">
         <Hero data={collectionsText} />
-        <div className="carousel carousel-center space-x-4 p-4">
+        <div className="carousel carousel-center space-x-4 p-4 w-full sm:w-full">
           {collections.map((collection, index) => (
-            <div className="carousel-item">
+            <div className="carousel-item  key={index}">
               <CollectionCard
-                key={index}
                 imageSrc={collection.imageSrc}
                 label={collection.label}
                 icons={collection.icons}
@@ -22,6 +21,7 @@ const Collection = () => {
           ))}
         </div>
       </div>
+      <hr className="border-b-black w-1/3" />
     </div>
   );
 };

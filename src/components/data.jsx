@@ -5,16 +5,20 @@ import frame3 from "../assets/img/frame-3.png";
 import lagos1 from "../assets/img/lagos1.png";
 import lagos2 from "../assets/img/lagos2.png";
 import lagos3 from "../assets/img/lagos3.png";
-
+import lago4 from "../assets/img/lago4.png";
+import lago5 from "../assets/img/lago5.png";
 import lg1icon1 from "../assets/img/lg1icon1.png";
 import lg1icon2 from "../assets/img/lg1icon2.png";
 import lg1icon3 from "../assets/img/lg1icon3.png";
-
 import awardCardImg from "../assets/img/flower.png";
-
 import serviceImg1 from "../assets/img/servicesimg1.png";
 import serviceImg2 from "../assets/img/servicesimg2.png";
 import serviceImg3 from "../assets/img/servicesimg3.png";
+import bath from "../assets/img/bath.jpg";
+import spa1 from "../assets/img/spa1.jpg";
+import spa2 from "../assets/img/spa2.jpg";
+import spa3 from "../assets/img/spa3.jpg";
+import bathroom2 from "../assets/img/bathroom2.jpg";
 
 export const imageList = [
   { imageSrc: frame1 },
@@ -27,11 +31,12 @@ export const imageList = [
 ];
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Collection", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Get in Touch", href: "#" },
-  { label: "Awards", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Features", href: "/features" },
+  { label: "Collection", href: "/collections" },
+  { label: "Services", href: "/services" },
+  { label: "Get in Touch", href: "/contact" },
+  { label: "Awards", href: "/awards" },
 ];
 
 //------------FEATURE SECTION-------------//
@@ -69,51 +74,81 @@ export const features = [
 
 //--------------COLLECTION-----------------//
 export const collectionsText = {
-  heading: "The Collection ",
+  heading: "The Collection",
   highlight: "",
   paragraphs: [
-    "Our ultra-luxury private residences include villas, chalets and spas, as well as a 5-star superior ",
-    "hotel. Each one is chosen for its unique character and is designed impeccably in the signature .",
-    "Ultima style. Browse our growing portfolio of destinations below..",
+    "Our ultra-luxury private residences include villas, chalets and spas, as well as a 5-star superior hotel",
+    "Each one is chosen for its unique character and is designed impeccably in the signature Ultima style.",
+    " Browse our growing portfolio of destinations below.",
   ],
 };
 
 export const collections = [
   {
-    imageSrc: lagos1,
+    imageSrc: bath,
     label: "Lagos",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
     title: "The Cherryland",
   },
   {
     imageSrc: lagos1,
-    label: "Lagos",
+    label: "Abuja",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
-    title: "The Cherryland",
+    title: "The Rosewood",
   },
   {
-    imageSrc: lagos1,
-    label: "Lagos",
+    imageSrc: spa1,
+    label: "PH",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
-    title: "The Cherryland",
+    title: "The Maplecrest",
   },
   {
-    imageSrc: lagos1,
+    imageSrc: spa2,
     label: "Lagos",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
-    title: "The Cherryland",
+    title: "The Pinegrove",
   },
   {
-    imageSrc: lagos2,
+    imageSrc: spa3,
+    label: "Ikeja",
+    icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
+    title: "The Oakshade",
+  },
+  {
+    imageSrc: bathroom2,
     label: "Lagos",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
-    title: "The Cherryland",
+    title: "The Bluewater",
   },
   {
     imageSrc: lagos3,
-    label: "Lagos",
+    label: "Maid",
     icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
-    title: "The Cherryland",
+    title: "The Willowbend",
+  },
+  {
+    imageSrc: lagos2,
+    label: "Imo",
+    icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
+    title: "The Messissipi",
+  },
+  {
+    imageSrc: lago4,
+    label: "Kaduna",
+    icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
+    title: "The WaterFall",
+  },
+  {
+    imageSrc: frame1,
+    label: "Niger",
+    icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
+    title: "The Cloverhill",
+  },
+  {
+    imageSrc: lago5,
+    label: "Nile",
+    icons: [{ img: lg1icon1 }, { img: lg1icon2 }, { img: lg1icon3 }],
+    title: "The Birchfield",
   },
 ];
 
@@ -172,6 +207,11 @@ export const awards = [
   },
   {
     imageSrc: awardCardImg,
+    heading: "Africa Travel Awards 2020",
+    paragraph: "Top for Business Travelers",
+  },
+  {
+    imageSrc: awardCardImg,
     heading: "West Africa Tourism Awards 2022",
     paragraph: "Best in Service Excellence",
   },
@@ -179,10 +219,5 @@ export const awards = [
     imageSrc: awardCardImg,
     heading: "Global Hospitality Awards 2021",
     paragraph: "Outstanding Guest Experience",
-  },
-  {
-    imageSrc: awardCardImg,
-    heading: "Africa Travel Awards 2020",
-    paragraph: "Top for Business Travelers",
   },
 ];

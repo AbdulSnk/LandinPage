@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "../Hero";
-import { awards, awardText } from "../data";
-import AwardCard from "../AwardCard";
+import Hero from "../components/Hero";
+import { awards, awardText } from "../components/data";
+import AwardCard from "../components/AwardCard";
 
 const Award = () => {
   return (

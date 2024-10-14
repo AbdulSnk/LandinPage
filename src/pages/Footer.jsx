@@ -1,16 +1,18 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import img1 from "../../assets/img/socialicon1.png";
-import linkedInImg from "../../assets/img/socialicon2.png";
-import fbImg from "../../assets/img/socialicon3.png";
-import twitter from "../../assets/img/socialicon4.png";
+// import img1 from "../../assets/img/socialicon1.png";
+// import img1 from "../assets/img/socailicon1.png";
+import img1 from "../assets/img/socialicon1.png";
+import linkedInImg from "../assets/img/socialicon2.png";
+import fbImg from "../assets/img/socialicon3.png";
+import twitter from "../assets/img/socialicon4.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-[#292929] pt-10 pb-20 text-white">
-      <div className="container mx-auto px-4 flex flex-col gap-5">
-        <h3 className="text-lg leading-[23.99px] font-normal text-center sm:text-left">
+      <div className="container mx-auto px-6 flex flex-col gap-5">
+        <h3 className="text-lg leading-[25px] font-normal text-center sm:text-left">
           HOMY & COMFORT
         </h3>
         <hr className="border-[#525252]" />
@@ -41,7 +43,7 @@ const Footer = () => {
                 <tr>
                   <td className="p-2 pr-14">Email Address</td>
                   <td className="flex justify-between items-center gap-2 p-2 text-[#AA8F00]">
-                    <ArrowRight className="w-full h-auto" />
+                    <ArrowRight className="w-auto h-auto" />
                     <span>Subscribe</span>
                   </td>
                 </tr>

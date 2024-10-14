@@ -1,12 +1,12 @@
-import Navbar from "./components/pages/Navbar";
-import FeatureSection from "./components/pages/Feature";
-import CollectionSection from "./components/pages/Collection";
-import Services from "./components/pages/Services";
-import ContactPage from "./components/pages/ContactPage";
-import Award from "./components/pages/Award";
-import Footer from "./components/pages/Footer";
+import Home from "./pages/Home";
+import Navbar from "./pages/Navbar";
+import FeatureSection from "./pages/Feature";
+import CollectionSection from "./pages/Collection";
+import Services from "./pages/Services";
+import ContactPage from "./pages/ContactPage";
+import Award from "./pages/Award";
+import Footer from "./pages/Footer";
 import { useState } from "react";
-import Home from "./components/pages/Home";
 
 function App() {
   const [clicked, setClicked] = useState(true);

@@ -1,18 +1,18 @@
 import React from "react";
-import { features, featuresText } from "../data";
-import Card from "../Card";
-import Hero from "../Hero";
-import ArrowButton from "../ArrowButton";
-import ImageCard from "../imageCard";
+import { features, featuresText } from "../components/data";
+import Card from "../components/Card";
+import Hero from "../components/Hero";
+import ArrowButton from "../components/ArrowButton";
+// import ImageCard from "../components/";
 
 const Feature = () => {
   return (
-    <div className="w-full container mx-auto px-4 py-20">
-      <div className="flex flex-cols justify-between gap-20">
+    <div className="w-full container mx-auto px-6 py-20">
+      <div className="">
         <Hero data={featuresText} />
         {/* <ImageCard /> */}
       </div>
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-8 sm:flex justify-between sm:gap-15">
         {features.map((feature, index) => (
           <Card
             key={index}
