@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { contactText } from "../components/data";
 import Hero from "../components/Hero";
+import EnquiryModal from "../components/EnquireModal";
 
 const ContactPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
+
+  // Function to handle modal open/close
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="container mx-auto px-4 py-20 flex flex-col justify-center items-center gap-16 ">
       <h2 className="text-2xl font-semibold  md:text-4xl lg:text-xl  leading-tight tracking-wide  ">
@@ -16,10 +24,14 @@ const ContactPage = () => {
         the next level of luxury.
       </p>
 
-      <button className="inline-flex items-center rounded-lg md:px-4 md:py-3 md:text-2xl md:font-semibold lg:text-base lg:py-2 lg:px-3 py-2 px-3 border border-black space-x-4 hover:bg-black hover:text-white transition-all duration-300">
+      <button
+        className="inline-flex items-center rounded-lg md:px-4 md:py-3 md:text-2xl md:font-semibold lg:text-base lg:py-2 lg:px-3 py-2 px-3 border border-black space-x-4 hover:bg-black hover:text-white transition-all duration-300"
+        onClick={toggleModal}>
         <ArrowRight className="w-5 h-5" />
         <h1>Enquire Now</h1>
       </button>
+
+      <EnquiryModal isOpen={isModalOpen} onClose={toggleModal} />
     </div>
   );
 };
