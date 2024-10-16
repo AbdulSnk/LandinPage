@@ -31,12 +31,12 @@ export const imageList = [
 ];
 
 export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Features", href: "/features" },
-  { label: "Collection", href: "/collections" },
-  { label: "Services", href: "/services" },
-  { label: "Get in Touch", href: "/contact" },
-  { label: "Awards", href: "/awards" },
+  { id: "home", label: "Home" },
+  { id: "features", label: "Features" },
+  { id: "collections", label: "Collections" },
+  { id: "services", label: "Services" },
+  { id: "contact", label: "Get in Touch" },
+  { id: "awards", label: "Awards" },
 ];
 
 //------------FEATURE SECTION-------------//
