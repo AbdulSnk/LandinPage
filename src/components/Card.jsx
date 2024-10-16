@@ -14,7 +14,7 @@ const Card = ({ imageSrc, title, description }) => {
         <h2 className="text-lg font-bold md:text-xl lg:font-medium tracking-normal  mb-2 ">
           {title}
         </h2>
-        <p className="text-base sm:text-md md:text-lg ">{description}</p>
+        <p className="text-base sm:text-md ">{description}</p>
       </div>
     </div>
   );
