@@ -11,22 +11,35 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [clicked, setClicked] = useState(true);
+
   return (
-    <Router>
+    <div>
       {!clicked ? (
         <Home setClicked={setClicked} clicked={clicked} />
       ) : (
         <div>
-          <Navbar setClicked={setClicked} clicked={clicked} />
-          <FeatureSection />
-          <CollectionSection />
-          <Services />
-          <ContactPage />
-          <Award />
+          <section id="home">
+            <Navbar setClicked={setClicked} clicked={clicked} />
+          </section>
+          <section id="features">
+            <FeatureSection />
+          </section>
+          <section id="collections">
+            <CollectionSection />
+          </section>
+          <section id="services">
+            <Services />
+          </section>
+          <section id="contact">
+            <ContactPage />
+          </section>
+          <section id="awards">
+            <Award />
+          </section>
           <Footer />
         </div>
       )}
-    </Router>
+    </div>
   );
 }
 

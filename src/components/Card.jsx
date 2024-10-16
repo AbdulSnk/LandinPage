@@ -11,12 +11,10 @@ const Card = ({ imageSrc, title, description }) => {
         className="w-full h-auto mx-auto object-cover object-fi  rounded-md shadow-lg mb-4 "
       />
       <div className="group-hover:translate-y-0 transition-all ">
-        <h3 className="text-xl font-bold lg:text-lg lg:font-medium tracking-normal  mb-2 ">
+        <h2 className="text-lg font-bold md:text-xl lg:font-medium tracking-normal  mb-2 ">
           {title}
-        </h3>
-        <p className="text-xl font-medium md:text-2xl lg:text-sm lg:font-normal ">
-          {description}
-        </p>
+        </h2>
+        <p className="text-base sm:text-md md:text-lg ">{description}</p>
       </div>
     </div>
   );
